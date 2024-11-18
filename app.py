@@ -18,6 +18,5 @@ def handleMessage(msg):
     send(msg, broadcast=True)  # Envía el mensaje a todos los clients conectados
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))  # Render asignará el puerto
+    port = int(os.environ.get('PORT', 4000))  # Render asignará el puerto
     socketio = SocketIO(app, cors_allowed_origins="*")
-
